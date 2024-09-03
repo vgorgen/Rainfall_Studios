@@ -271,3 +271,28 @@ $J(document).ready(
         VsJobs.Init();
     }
 );
+
+let currentSlide = 0;
+const slides = document.querySelectorAll('.slider-image');
+
+function showSlide(index) {
+    slides.forEach((slide, i) => {
+        slide.classList.remove('active');
+        if (i === index) {
+            slide.classList.add('active');
+        }
+    });
+}
+
+function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+}
+
+function prevSlide() {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    showSlide(currentSlide);
+}
+
+// Initialize the first slide
+showSlide(currentSlide);
