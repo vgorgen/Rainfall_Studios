@@ -1025,3 +1025,9 @@ a.footnoted {
 .wordbreak{
     word-break: break-word;
 }
+
+.cinzel-decorative-bold {
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
