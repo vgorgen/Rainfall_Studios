@@ -19,6 +19,11 @@
     <meta name="twitter:card" value="summary">
 
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap"
+        rel="stylesheet">
+
 
     <link href="css2/globale0b9.css" rel="stylesheet" type="text/css">
     <link href="css2/fontsf73f.css" rel="stylesheet" type="text/css">
@@ -42,8 +47,8 @@
 </head>
 <style>
     #image-slider {
-        width: 200px;
-        height: 350px;
+        width: 300px;
+        height: 600px;
         position: relative;
         max-width: 100%;
         margin: auto;
@@ -66,6 +71,7 @@
     .slider-image.active {
         display: block;
         /* Display the active image */
+        border-radius: 15px;
     }
 
     .prev,
@@ -89,17 +95,25 @@
     }
 
     .overlay-text {
-        font-family: cursive;
-        position: absolute;
-        top: 20%; /* Center the text vertically */
-        left: 50%; /* Center the text horizontally */
-        transform: translate(-50%, -50%); /* Adjust the text to be perfectly centered */
-        color: white; /* Text color */
-        font-size: 25px; /* Text size */
-        font-weight: bold; /* Bold text */
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Optional: add a shadow for better readability */
+        font-family: "Cinzel Decorative", serif;
+        position: relative;
+        top: 1pc;
+        /* Center the text vertically */
+        left: 50%;
+        /* Center the text horizontally */
+        transform: translate(-50%, -50%);
+        /* Adjust the text to be perfectly centered */
+        color: white;
+        /* Text color */
+        font-size: 30px;
+        /* Text size */
+        font-weight: bold;
+        /* Bold text */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        /* Optional: add a shadow for better readability */
         text-align: center;
-        padding: 10px; /* Optional: Add some padding */
+        padding: 0px;
+        /* Optional: Add some padding */
     }
 </style>
 
@@ -140,9 +154,8 @@
                             <div class="search_form_wrapper">
                                 <div class="row">
                                     <div class="col_12">
-                                        <div class="bnr-video "> <iframe width="100%" height="695"
-                                                src="." title="Sails Out"
-                                                frameborder="0"
+                                        <div class="bnr-video "> <iframe width="100%" height="695" src="."
+                                                title="Sails Out" frameborder="0"
                                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
                                                 autoplay></iframe>
@@ -181,20 +194,21 @@
                         </p>
                     </section>
 
-                    
-                        
-                        <!-- Games Section -->
+
+
+                    <!-- Games Section -->
                     <section id="games" class="content_section">
                         <h1>Our Games</h1>
                         <section id="image-slider" class="content_section">
                             <div class="slider">
                                 <span class="prev" onclick="prevSlide()">&#10094;</span>
                                 <div>
-                                    <a href="https://vgorgen.github.io/Rainfall_Studios/sails-out/index.html" target="_blank" style="display: flow-root;">
-                                        <div class="overlay-text">Sails Out</div>
+                                    <a href="https://vgorgen.github.io/Rainfall_Studios/sails-out/index.html"
+                                        target="_blank" style="display: flow-root;">
+                                        <div class="overlay-text cinzel-decorative-bold">Sails Out</div>
                                         <img src="images/SAILS OUT.png" alt="Image 1" class="slider-image">
                                     </a>
-                                    
+
                                 </div>
                                 <span class="next" onclick="nextSlide()">&#10095;</span>
                             </div>
