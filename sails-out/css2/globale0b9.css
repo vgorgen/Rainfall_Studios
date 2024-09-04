@@ -1011,7 +1011,7 @@ a.footnoted {
     -moz-filter: blur(5vw);
     -ms-filter: blur(5vw);
     filter: blur(5vw);
-    background: linear-gradient(270deg, #0fffc1, #7e0fff);
+    background: linear-gradient(270deg, #0fd7ff, #1293e3);
     background-size: 200% 200%;
     animation: animateGlow 10s ease infinite;
 }
