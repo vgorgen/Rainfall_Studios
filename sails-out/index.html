@@ -41,6 +41,68 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
+    <style>
+    /* Video Container - Aspect Ratio Korumalı */
+    .bnr-video {
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+        height: 0;
+        overflow: hidden;
+        margin: 20px 0;
+    }
+
+    .bnr-video iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    /* Swiper Temel Stiller */
+    .swiper {
+        width: 100%;
+        padding: 50px 0;
+    }
+
+    .swiper-slide {
+        background: rgba(0, 0, 0, 0.5);
+        padding: 30px;
+        border-radius: 10px;
+    }
+
+    .text-content {
+        color: white;
+        margin-bottom: 20px;
+    }
+
+    .text-content h3 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .text-content p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    /* Responsive Tasarım */
+    @media (max-width: 768px) {
+        .swiper-slide {
+            padding: 15px;
+        }
+        
+        .text-content h3 {
+            font-size: 18px;
+        }
+        
+        .text-content p {
+            font-size: 14px;
+        }
+    }
+</style>
+
 </head>
 
 <body data-vsapp-context="home" style="background-image: url('images/bg2.jpg');">
@@ -80,8 +142,7 @@
                                 <div class="search_form_wrapper">
                                     <div class="row">
                                         <div class="col_12">
-                                            <div class="bnr-video "> <iframe width="100%" style="height: 500px;"
-                                                src="https://youtu.be/yVKNQeE0ovA" title="Sails Out"
+                                            <div class="bnr-video "> <iframe src="https://youtube.com/embed/yVKNQeE0ovA" title="Sails Out"
                                                 frameborder="0"
                                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
